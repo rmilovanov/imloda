@@ -4,8 +4,6 @@ import urllib
 from subprocess import call
 import shlex
 
-import SETTINGS
-
 CWD = os.getcwd()       # Current user's work directory
 
 
