@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import argparse
 import os
 import urllib
@@ -41,6 +43,7 @@ print "Look for {} images of {} and put them into {}".format(
                         args.amount, args.query, args.dest_folder)
 
 get_googliser()
-some_command = 'bash {}/googliser.sh -p "{}" -n {} -c -f 0'.format(CWD, args.query, args.amount)
+os.chdir(CWD)
+some_command = 'bash googliser.sh -p "{}" -n {} -N -P 40 -c -m 2mp'.format(args.query, args.amount)
 print some_command
 call(shlex.split(some_command))
