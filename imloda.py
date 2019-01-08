@@ -52,6 +52,7 @@ if __name__ == '__main__':
     parser.add_argument('-q', '--query',
                         action='store',
                         required=True,
+                        type=lambda s: unicode(s, 'utf8'),
                         help="What you're looking for")
     parser.add_argument('-a', '--amount',
                         type=int,
