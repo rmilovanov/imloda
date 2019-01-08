@@ -62,6 +62,6 @@ if __name__ == '__main__':
                         help="Script result destination folder",
                         default=CWD)
 
-    parser.add_argument('--version', action='version', version='%(prog)s 1.1')
+    parser.add_argument('--version', action='version', version='%(prog)s 1.3')
     args = parser.parse_args()
     main(args.amount, args.query, args.dest_folder)
